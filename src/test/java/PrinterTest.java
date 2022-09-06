@@ -5,10 +5,10 @@ import static org.junit.Assert.assertEquals;
 
 public class PrinterTest {
 
-    Printer printer;
+    private Printer printer;
 
     @Before
-    public void before(){printer = new Printer(100, 65);}
+    public void before(){printer = new Printer(100, 65);} // Also: "public void setUp()"
 
     @Test
     public void hasPaper(){assertEquals(100, printer.getPaperLeft());}
